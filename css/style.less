@@ -1,0 +1,77 @@
+// Pre defined CSS
+
+.row,p,h1,h2,h3{
+	margin: 0;
+}
+
+.tac{
+	text-align: center;
+}
+
+.tar{
+	text-align: right;
+}
+
+.cb{
+	clear: both;
+}
+
+body{
+	background-color: #F5F5F5;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+@button: #3078c0;
+
+// End pre defined classes
+
+.title{
+	margin: 20px 0;
+	font-size: 50px;
+	font-weight: 500;
+	text-shadow: 2px 2px grey;
+}
+
+#github{
+	margin: auto;
+	color: black;
+}
+
+input{
+	width: 100%;
+	border: none;
+	-webkit-transition: border 0.3s, background 0.3s;
+	-moz-transition: border 0.3s, background 0.3s;
+	-o-transition: border 0.3s, background 0.3s;
+	transition: border 0.3s, background 0.3s;
+	height: 40px;
+
+	&:focus{
+		outline: none;
+	}
+}
+
+input[type="text"]{
+	padding: 10px;
+	border-bottom: solid 2px #c9c9c9;
+
+	&:focus, &:hover{
+		border-bottom: solid 2px #969696;
+	}
+}
+
+input[type="submit"]{
+	background: @button;
+	color: white;
+	border-bottom: 2px solid darken(@button, 10%);
+	
+	&:hover, &.hover{
+		background: darken(@button, 3%);
+	}
+
+	&:focus, &.focus{
+		background: darken(@button, 10%);
+	}
+}

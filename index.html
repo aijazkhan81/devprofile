@@ -3,12 +3,34 @@
 <head>
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>Dev Profile</title>
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<title>Developer Profile</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900" rel="stylesheet">
+	<link rel="stylesheet/less" type="text/css" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet/less" type="text/css" href="css/style.less"/>
 </head>
-<body>
+<body class="container">
+	<div class="row tac">
+		<div class="col-sm-12">
+			<h1 class="tac title">Developer's Profile</h1> <br>
+		</div>
+		<form class="row" id="gitform">
+			<div class="col-sm-offset-2 col-sm-4">
+				<input id="gitinput" type="text" name="github" placeholder="Github username">	
+			</div>
+			<div class="col-sm-4">
+				<input type="submit" id="gitsubmit">
+			</div>
+		</form>
+	</div> <br><br>
+
+	<div class="row">
+		<div class="col-sm-4">
+			<div id="area"></div>
+			<!-- <div id="list"><ul></ul></div> -->
+		</div>
+	</div>
 	
+
 
 	<script src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
