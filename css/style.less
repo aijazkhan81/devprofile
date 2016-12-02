@@ -18,12 +18,25 @@
 
 body{
 	background-color: #F5F5F5;
-	color: black;
+	color: #34495e;
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
 }
 
-@button: #3078c0;
+a{
+	color: #428bca;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	-o-transition: color 0.3s;
+	transition: color 0.3s;
+
+	&:hover{
+		color: black;
+		text-decoration: none;		
+	}
+}
+
+@button: #428bca;
 
 // End pre defined classes
 
@@ -32,6 +45,10 @@ body{
 	font-size: 50px;
 	font-weight: 500;
 	text-shadow: 2px 2px grey;
+}
+
+#gitform{
+	margin-bottom: 5%;
 }
 
 #github{
@@ -73,5 +90,30 @@ input[type="submit"]{
 
 	&:focus, &.focus{
 		background: darken(@button, 10%);
+	}
+}
+
+#gitarea{
+	line-height: 24px;
+
+	.circimg{
+		border-radius: 50%;
+		margin-bottom: 20px;
+	}
+
+	.repolist{
+		padding-left: 3%;
+
+		li{
+
+
+			a {
+				text-transform: capitalize;
+			}
+		}
+	}
+
+	.subheading{
+		font-weight: 700;
 	}
 }
